@@ -16,15 +16,15 @@
     },
     "repository": {
         "type": "git",
-        "url": "git+https://github.com/GitHubJiKe/ts-practice.git"
+        "url": "git+https://github.com/GitHubJiKe/num2han.git"
     },
     "keywords": [],
     "author": "",
     "license": "ISC",
     "bugs": {
-        "url": "https://github.com/GitHubJiKe/ts-practice/issues"
+        "url": "https://github.com/GitHubJiKe/num2han/issues"
     },
-    "homepage": "https://github.com/GitHubJiKe/ts-practice#readme",
+    "homepage": "https://github.com/GitHubJiKe/num2han#readme",
     "devDependencies": {
         "@babel/preset-typescript": "^7.21.4",
         "@jest/globals": "^29.5.0",
