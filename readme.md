@@ -13,9 +13,7 @@ import num2Han from "num2han";
 
 num2Han.convert(123); // 一百二十三
 
-num2Han.setMode("繁");
-
-num2Han.convert("123"); // 壹佰贰拾叁
+num2Han.convert("123", "繁"); // 壹佰贰拾叁
 ```
 
 ## 使用示例
