@@ -1,13 +1,107 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>num2Han</title>
-    </head>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>num2Han</title>
+    <style>
+      html,
+      body {
+        width: 800px;
+        padding: 0;
+        margin: 0 auto;
+        border: none;
+      }
 
-    <body>
-        <script type="module" src="./src/app.ts"></script>
-    </body>
+      h1 {
+        text-align: center;
+      }
+
+      pre {
+        background-color: black;
+        border-radius: 8px;
+      }
+
+      code {
+        color: rgb(14, 222, 153);
+        width: 100%;
+        display: block;
+        font-size: 14px;
+      }
+
+      ul {
+        background-color: whitesmoke;
+        border-radius: 8px;
+        padding: 12px;
+      }
+
+      li {
+        padding: 12px;
+        margin-top: 20px;
+        display: block;
+        background-color: black;
+        border-radius: 8px;
+        color: white;
+        padding-left: 20px;
+        line-height: 30px;
+      }
+      p {
+        padding: 12px;
+        border-radius: 8px;
+        background-color: black;
+        color: white;
+        padding-left: 20px;
+      }
+      a {
+        text-decoration: none;
+        color: rgb(14, 222, 153);
+      }
+    </style>
+  </head>
+
+  <body>
+    <div>
+      <h1><a href="https://github.com/GitHubJiKe/num2han">num2han</a></h1>
+      <p>阿拉伯数字转化为汉字（简/繁体）</p>
+      <h2>安装</h2>
+      <pre>
+            <code>
+                npm i -S num2han
+            </code>
+        </pre>
+      <h2>代码示例</h2>
+      <pre>
+            <code>
+                import num2Han from 'num2han'
+
+                num2Han.convert(123) // 一百二十三
+                   
+                num2Han.setMode('繁')
+
+                num2Han.convert('123') // 壹佰贰拾叁
+            </code>
+            </pre>
+      <h2>使用示例</h2>
+      <ul>
+        <li>-123</li>
+        <li>0</li>
+        <li>1</li>
+        <li>12</li>
+        <li>123</li>
+        <li>1234</li>
+        <li>12345</li>
+        <li>12346</li>
+        <li>123467</li>
+        <li>1234678</li>
+        <li>12346789</li>
+        <li>123467890</li>
+        <li>9999999999</li>
+        <li>9999999999.12345</li>
+        <li>99999999999.123456</li>
+        <li>999999999999.1234567</li>
+      </ul>
+    </div>
+    <script type="module" src="./src/app.ts"></script>
+  </body>
 </html>
